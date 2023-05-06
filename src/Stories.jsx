@@ -1,5 +1,5 @@
 
-function story(props){
+function Story(props){
   return(
     <div className="story">
       <div className="imagem">
@@ -14,15 +14,16 @@ function story(props){
 export default function Stories(){
 
   let ListaStories=[
-    <story imagem="assets/img/9gag.svg" texto="9gag"/>
-    <story imagem="assets/img/meowed.svg" texto="meowed"/>
-    <story imagem="assets/img/barked.svg" texto="barked"/>
-    <story imagem="assets/img/nathanwpylestrangeplanet.svg" texto="nathanwpylestrangeplanet"/>
-    <story imagem="assets/img/wawawicomics.svg" texto="wawawicomics"/>
-    <story imagem="assets/img/respondeai.svg" texto="respondeai"/>
-    <story imagem="assets/img/filomoderna.svg" texto="filomoderna"/>
-    <story imagem="assets/img/memeriagourmet.svg" texto="memeriagourmet"/>
-  ]
+    <Story imagem="assets/img/9gag.svg" texto="9gag"/>,
+    <Story imagem="assets/img/meowed.svg" texto="meowed"/>,
+    <Story imagem="assets/img/barked.svg" texto="barked"/>,
+    <Story imagem="assets/img/nathanwpylestrangeplanet.svg" texto="nathanwpylestrangeplanet"/>,
+    <Story imagem="assets/img/wawawicomics.svg" texto="wawawicomics"/>,
+    <Story imagem="assets/img/respondeai.svg" texto="respondeai"/>,
+    <Story imagem="assets/img/filomoderna.svg" texto="filomoderna"/>,
+    <Story imagem="assets/img/memeriagourmet.svg" texto="memeriagourmet"/>,
+  ];
+
   return (
     <ul class="stories">
     {ListaStories.map ((indice) => <li>{indice}</li>)}
