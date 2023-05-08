@@ -6,12 +6,12 @@ function PerfilUsuario(props){
 
 
 function InserirImagem(){
-    const ImagemNova = prompt('Insira URL da foto de perfil nova')
+    const ImagemNova = prompt("Insira URL da foto de perfil nova")
     setImagem(ImagemNova)
 }
 
 function InserirNome(){
-    const NomeNovo = prompt('Insira o novo user')
+    const NomeNovo = prompt("Insira o novo user")
     setNome(NomeNovo)
 }
 

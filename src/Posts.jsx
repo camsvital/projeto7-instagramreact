@@ -10,6 +10,7 @@ function Post(props) {
       setCurtir(true);
       setCurtidas(Number(curtidas) + 1);
     } else {
+      setCurtir(false)
       setCurtidas(Number(curtidas) - 1);
     }
   }
@@ -26,8 +27,8 @@ function Post(props) {
     <div data-teste="post" class="post">
       <div class="topo">
         <div class="usuario">
-          <img src={props.usuarioFoto} alt="imagem-usuario"/>
-          {props.usuarioTexto}
+          <img src={props.UsuarioImagem} alt="imagem-Usuario"/>
+          {props.UsuarioUser}
         </div>
         <div class="acoes">
           <ion-icon name="ellipsis-horizontal"></ion-icon>
@@ -51,7 +52,7 @@ function Post(props) {
               data-teste="like-post"
               class={curtir === false ? "" : "colorido"}
               onClick={CurtirPost}
-              name={curtir === true ? "heart-outline" : "heart"}
+              name={curtir === false ? "heart-outline" : "heart"}
             ></ion-icon>
             <ion-icon name="chatbubble-outline"></ion-icon>
             <ion-icon name="paper-plane-outline"></ion-icon>
@@ -66,10 +67,10 @@ function Post(props) {
         </div>
 
         <div class="curtidas">
-          <img src={props.pagCurtida} />
+          <img src={props.UsuarioCurtida} />
           <div class="texto">
             Curtido por
-            <strong> {props.usuarioCurtida}</strong> e{" "}
+            <strong> {props.UsuarioCurtida}</strong> e{" "}
             <strong data-test="likes-number"> outras {curtidas} pessoas</strong>
           </div>
         </div>
@@ -82,19 +83,19 @@ export default function Posts() {
   const ListaPost = [
     <Post
       
-      usuarioFoto="assets/img/meowed.svg"
-      usuarioTexto="meowed"
+      UsuarioImagem="assets/img/meowed.svg"
+      UsuarioUser="meowed"
       imagem="assets/img/gato-telefone.svg"
-      pagCurtida="assets/img/respondeai.svg"
-      usuario="respondeai"
+      UsuarioCurtida="assets/img/respondeai.svg"
+      Usuario="respondeai"
       QtdeCurtidas={150}
     />,
     <Post
-      usuarioFoto="assets/img/barked.svg"
-      usuarioTexto="barked"
+      UsuarioImagem="assets/img/barked.svg"
+      UsuarioUser="barked"
       imagem="assets/img/dog.svg"
-      pagCurtida="assets/img/adorable_animals.svg"
-      usuarioCurtida="adorable_animals"
+      UsuarioCurtida="assets/img/adorable_animals.svg"
+      Usuario="adorable_animals"
       QtdeCurtidas={35}
     />,
   ];
