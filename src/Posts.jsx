@@ -70,7 +70,7 @@ function Post(props) {
           <img src={props.UsuarioCurtida} />
           <div class="texto">
             Curtido por
-            <strong> {props.UsuarioCurtida}</strong> e{" "}
+            <strong> {props.Usuario}</strong> e{" "}
             <strong data-test="likes-number"> outras {curtidas} pessoas</strong>
           </div>
         </div>
