@@ -1,11 +1,11 @@
 
 function Story(props){
   return(
-    <div className="story">
-      <div className="imagem">
-        <img src="{props.imagem}"/>
+    <div class="story">
+      <div class="imagem">
+        <img src={props.imagem}/>
       </div>
-      <div className="usuario">{props.texto}
+      <div class="usuario">{props.texto}
       </div>
     </div>
   )

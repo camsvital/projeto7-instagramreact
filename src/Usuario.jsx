@@ -16,7 +16,7 @@ function InserirNome(){
 }
 
 return(
-    <div className="usuario">
+    <div class="usuario">
     <img  onClick = {InserirImagem} src={imagem} />
     <div class="texto">
       <strong>{props.usuario}</strong>
