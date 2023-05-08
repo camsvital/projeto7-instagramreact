@@ -283,7 +283,8 @@ body {
 }
 
 .colorido {
-  color: red;
+  background-color: red;
+  color: black;
 }
 
 .sidebar .sugestoes .sugestao .usuario .texto :last-child {
