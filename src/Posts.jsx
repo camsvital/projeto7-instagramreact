@@ -40,7 +40,7 @@ function Post(props) {
           data-teste="post-image"
           class={curtir === false ? "" : "colorido"}
           onClick={CurtirPost}
-          name={curtir === true ? "heart-outline" : "heart"}
+          name={curtir === false ? "heart-outline" : "heart"}
           src={props.imagem}
         />
       </div>
